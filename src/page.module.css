@@ -1,0 +1,2372 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&display=swap');
+
+.navicon {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Initially hide the bar icon */
+  }
+  @media (max-width: 750px) {
+    .navicon {
+      display: block;
+    }
+  } 
+.main{
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.navb{
+    font-family: 'Poppins';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 90px;
+    border: 2px solid black;
+    box-shadow: 12px 12px;
+    border-radius: 20px;
+    padding: 0% 4%;
+}
+.navb h1{
+    font-family:'Poppins';
+    font-size: 180%;
+    font-weight: 600;
+}
+.navb1{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    align-items: center;
+    justify-content: center;
+}
+.navic{
+    color: black;
+    font-size: 21px;
+}
+.lk{
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+    
+}
+.lk1{
+    padding: 2% 4%;
+    font-size: 100%;
+    font-weight: 500;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    transition: 600ms;
+}
+.lk1:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+    border: 2px solid rgb(63, 62, 62);
+}
+.maincont{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 8%;
+    padding-left: 13%;
+    
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.cont2{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+.cont2 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.bt1{
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+    text-decoration: none;
+}
+@keyframes slideLeft {
+    0%{
+       transform: translateX(100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+       transform: translateY(100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+       transform: translateY(-100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0%{
+       transform: translateX(-100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.image1{
+    width: 70%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+}
+@keyframes float{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+.image1:hover{
+    transform: scale(1.05);
+}
+.cont1 h2{
+    font-size: 450%;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+}
+.cont1 h1{
+    font-family:'Poppins';
+    font-size: 440%;
+    font-weight: 700;
+    width: 113%;
+    border-radius:10px;
+    padding: 2%;
+    background-color: #FE495F;
+    color: white;
+    text-shadow: 7px 5px rgb(63, 62, 62);
+    margin-top: -10%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+}
+.cont1 p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(97, 96, 96);
+    margin-top: -4%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+}
+.cont2{
+    margin-top: 2%;
+}
+.bt1{
+    width: 70px;
+    height: 65px;
+    background-color: black;
+    color:  #FAF9F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    transition: 600ms;
+    border: 2px solid rgb(63, 62, 62);
+    text-decoration: none;
+}
+.bt1:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+}
+.icn11{
+    width: 30px;
+    height: 30px;
+}
+.image2{
+    width: 33%;
+}
+.maincont1{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.abt2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2%;
+}
+.abt2 h1{
+    font-family:'Poppins';
+    margin-bottom: 3%;
+    font-size: 50px;
+    font-weight: 700;
+    width: fit-content;
+    border-radius:5px;
+    padding: 1% 2%;
+    background-color: #FE495F;
+    color: white;
+    text-shadow: 5px 3px rgb(63, 62, 62);
+}
+.abt2 p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: justify;
+}
+.bt3{
+    width: 170px;
+    height: 70px;
+    background-color: black;
+    color:  #FAF9F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5%;
+    transition: 500ms;
+    text-decoration: none;
+}
+.bt3:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+    border: 2px solid black;
+}
+.maincont4{
+    margin-top: 13%;
+}
+.image5{
+    width: 32%;
+    height: 32%;
+    margin-top: 5%;
+}
+.ca{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.ca1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1%;
+}
+.ca1 h1{
+    font-family:'Poppins';
+    font-size: 50px;
+    font-weight: 700;
+    width: fit-content;
+    border-radius:5px;
+    padding: 1% 2%;
+    background-color: #FE495F;
+    color: white;
+    text-shadow: 5px 3px rgb(63, 62, 62);
+}
+.ca1 p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: justify;
+}
+.bt4{
+    width: 170px;
+    height: 65px;
+    background-color: black;
+    color:  #FAF9F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1%;
+    transition: 500ms;
+    text-decoration: none;
+}
+.bt4:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+    border: 2px solid black;
+}
+.maincont2{
+   margin-top: 8%;
+}
+.sk1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sk1 h1{
+    font-family:'Poppins';
+    font-size: 35px;
+    font-weight: 700;
+    width: auto;
+    border-radius:5px;
+    padding: 1%;
+    background-color: #FE495F;
+    color: white;
+    text-shadow: 5px 3px rgb(63, 62, 62);
+}
+.sk1 p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+
+}
+.skk1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sk2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+.sk21 h1{
+    font-family:'Poppins';
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0%;
+}
+.sk21 p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    margin-top: -3.5%;
+}
+.bar{
+    background-color: #FAF9F5;
+    display: block;
+    height: 13px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-top: -1.5%;
+}
+.bar span{
+    height: 12px;
+    float: left;
+    background-color: red;
+    padding-right: 10px;
+    padding-top: 2px;
+    border-radius: 12px;
+}
+.react{
+    width: 75%;
+    animation: right 1.5s ease-out;
+}
+.html{
+    width: 80%;
+    animation: right1 1.5s ease-out;
+}
+.css{
+    width: 80%;
+    animation: right1 1.5s ease-out;
+}
+.next{
+    width: 70%;
+    animation: right3 1.5s ease-out;
+}
+.tail{
+    width: 60%;
+    animation: right4 1.5s ease-out;
+}
+.node{
+    width: 60%;
+    animation: right4 1.5s ease-out;
+}
+.mongo{
+    width: 70%;
+    animation: right3 1.5s ease-out;
+}
+.mysql{
+    width: 65%;
+    animation: right5 1.5s ease-out;
+}
+.skk2{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 40%;
+}
+.skk21 h2{
+    font-size: 110%;
+    font-weight: 500;
+}
+.bar p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: -0.5%;
+}
+
+.maincont3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8%;
+}
+.mainc1{
+    width: auto;
+    justify-content: center;
+    display: flex;
+}
+.mainc1 h1{
+    font-family:'Poppins';
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    width: fit-content;
+    border-radius:5px;
+    padding: 1%;
+    background-color: #FE495F;
+    color: white;
+    text-shadow: 5px 3px rgb(63, 62, 62);
+}
+.mainc2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom: 10%;
+    margin-top: 3%;
+    gap: 15px;
+    justify-content: center;
+}
+.w1:hover{
+    transform: scale(1.05);
+    border-top-right-radius: 28px;
+border-top-left-radius: 28px;
+}
+.mainc21{
+    border-radius: 9px;
+    width: 24%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transition: 300ms;
+}
+.mainc21:hover{
+    transform: scale(1.03);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #faf7eb;
+}
+.im{
+    overflow: hidden;
+}
+.w1{
+    width: 100%;
+    transition: all 200ms linear;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}   
+
+.mn{
+    padding:0 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mn1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.mn2{
+     display: flex;
+     gap: 8px;
+     padding-top: 8px;
+}
+.mn h1{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+.mn h6{
+    font-size: 10px;
+    color: rgb(148, 147, 147);
+    margin-top: -3%;
+}
+.icn2{
+    width: 22px;
+    height: 22px;
+    color: black;
+}
+.prp{
+    margin-top: -3%;
+    line-height: 17px;
+    font-weight: 450;
+    text-align: justify;
+}
+.mainc21 p{
+    font-size: 12px;
+    padding:3% 4%;
+}
+.maincont5{
+    background: black;
+    width: 100%;
+    height: auto;
+}
+.image121{
+    width: 10%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5%;
+    padding: 4%;
+    font-size: 8px;
+}
+
+.contact2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.contact2 h1{
+    font-weight: 300;
+}
+
+.contact1 h1{
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+.likn{
+    color: #f3e3a5;
+}
+.sp{
+    color: #f3e3a5;
+}
+@keyframes right{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 75%;
+    }
+}
+@keyframes right1{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 80%;
+    }
+}
+@keyframes right3{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 70%;
+    }
+}
+@keyframes right4{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 60%;
+    }
+}
+@keyframes right5{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 65%;
+    }
+}
+@media screen and (max-width:280px)
+{
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .maincont1{
+        flex-wrap: wrap;
+    }
+    .maincont4{
+        flex-wrap: wrap;
+    }
+    .image1{
+        margin: auto;
+        width: 80%;
+        margin-left: 11%;
+    }
+    .cont1 h1{
+       font-size: 30px;
+       width: 100%;
+    }
+    .cont1 h2{
+       font-size: 36px;
+    }
+    .cont1 p{
+        font-size: 9px;
+        width: 100%;
+        
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bt1{
+        width: 42px;
+        height: 42px;
+        justify-content: center;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 80%;
+        padding: 0%;
+    }
+    .skk2{
+        width: 100%;
+        padding: 1%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 h1{
+        font-size: 27px;
+    }
+    .abt2 p{
+        text-align: center;
+        font-size: 10px;
+        text-align: justify;
+    }
+    .ca1 h1{
+        font-size: 27px;
+    }
+    .ca1 p{
+        font-size: 10px;
+        
+    }
+    .sk1 h1{
+        font-size: 27px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 35px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:375px) and (min-width: 359px)
+{
+    .maincont1{
+        flex-direction: column;
+    }
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .image1{
+        margin: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cont1{
+        padding: 0% 3%;
+    }
+    .cont1 h1{
+       font-size: 39px;
+       width: 97%;
+    }
+    .cont1 h2{
+       font-size: 45px;
+    }
+    .cont1 p{
+        font-size: 11px;
+        width: 100%;
+        text-align: justify;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bt1{
+        width: 57px;
+        height: 57px;
+        justify-content: center;
+    }
+    .icn11{
+        font-size: 60px;
+    }
+    .bt3{
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 1%;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 80%;
+        padding: 0%;
+    }
+    .skk2{
+        width: 80%;
+        padding: 0%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 h1{
+        font-size: 37px;
+    }
+    .abt2 p{
+        text-align: justify;
+        font-size: 12px;
+        text-align: justify;
+        padding: 0% 7%;
+    }
+    .ca1 h1{
+        font-size: 37px;
+    }
+    .ca1 p{
+        font-size: 12px;
+    }
+    .sk1 h1{
+        font-size: 35px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+        width: 70%;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 0px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bt4{
+        width: 140px;
+        height: 55px;
+        font-size: 14px;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 80%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:390px) and (min-width: 374px)
+{
+    .bt1{
+        width: 65px;
+        height: 63px;
+    }
+    .maincont1{
+        flex-direction: column;
+    }
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .image1{
+        margin: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cont1{
+        padding: 0% 3%;
+    }
+    .cont1 h1{
+       font-size: 39px;
+       width: 97%;
+    }
+    .cont1 h2{
+       font-size: 45px;
+    }
+    .cont1 p{
+        font-size: 11px;
+        width: 100%;
+        text-align: justify;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .icn11{
+        font-size: 60px;
+    }
+    .bt3{
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 1%;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 80%;
+        padding: 0%;
+    }
+    .skk2{
+        width: 80%;
+        padding: 0%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -7%;
+    }
+    .abt2 h1{
+        font-size: 37px;
+    }
+    .abt2 p{
+        text-align: justify;
+        font-size: 12px;
+        text-align: justify;
+        padding: 0% 7%;
+    }
+    .ca1 h1{
+        font-size: 37px;
+    }
+    .ca1 p{
+        font-size: 12px;
+    }
+    .sk1 h1{
+        font-size: 35px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+        width: 70%;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 0px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bt4{
+        width: 140px;
+        height: 55px;
+        font-size: 14px;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 80%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:430px) and (min-width: 390px)
+{
+    /* .navb{
+        width: 75%;
+    }
+    .nav{
+        padding: 0%;
+        width: 100%;
+    } */
+    .maincont{
+        padding: 5%;
+        flex-direction: column-reverse;
+        width: fit-content;
+    }
+    .maincont1{
+        flex-wrap: wrap;
+    }
+    .image2{
+        width: 90%;
+    }
+    .image1{
+        margin: auto;
+        width: 100%;
+    }
+    .cont1 h1{
+       font-size: 40px;
+       width: fill;
+    }
+    .cont1 h2{
+       font-size: 50px;
+       width: fill;
+    }
+    .cont1 p{
+        font-size: 14px;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .sk21 p{
+        text-align: justify;
+    }
+    .sk1{
+        padding: 2%;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .skk1{
+        width: auto;
+        padding: 0% 0%;
+    }
+    .skk2{
+        width: 100%;
+        padding: 0% 12%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 p{
+        text-align: justify;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+        padding: 8%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 35px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .ca1 p{
+        text-align: justify;
+        padding: 2%;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:353px) and (min-width: 319px)
+{
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .image1{
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cont1{
+        padding: 0% 3%;
+    }
+    .cont1 h1{
+       font-size: 37px;
+       width: 96%;
+    }
+    .cont1 h2{
+       font-size: 40px;
+    }
+    .cont1 p{
+        font-size: 11px;
+        width: 100%;
+        text-align: justify;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bt1{
+        width: 57px;
+        height: 57px;
+        justify-content: center;
+    }
+    .icn11{
+        font-size: 60px;
+    }
+    .maincont1{
+        display: flex;
+        flex-direction: column;
+        padding: 0% 6%;
+    }
+    .bt3{
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 1%;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 90%;
+        margin-left: -10%;
+    }
+    .skk2{
+        width: 100%;
+        padding: 0% 7%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 h1{
+        font-size: 37px;
+    }
+    .abt2 p{
+        text-align: justify;
+        font-size: 12px
+    }
+    .ca1 h1{
+        font-size: 37px;
+    }
+    .ca1 p{
+        font-size: 12px;
+    }
+    .sk1 h1{
+        font-size: 27px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+        width: 80%;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 0px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bt4{
+        width: 130px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 80%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    } 
+}
+@media screen and (max-width:360px) and (min-width: 354px)
+{
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .image1{
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cont1{
+        padding: 0% 3%;
+    }
+    .cont1 h1{
+       font-size: 37px;
+       width: 96%;
+    }
+    .cont1 h2{
+       font-size: 40px;
+    }
+    .cont1 p{
+        font-size: 11px;
+        width: 100%;
+        text-align: justify;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bt1{
+        width: 57px;
+        height: 57px;
+        justify-content: center;
+    }
+    .icn11{
+        font-size: 60px;
+    }
+    .bt3{
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 1%;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 80%;
+        padding: 0%;
+    }
+    .skk2{
+        width: 80%;
+        padding: 0%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 h1{
+        font-size: 27px;
+    }
+    .abt2 p{
+        text-align: justify;
+        font-size: 10px
+    }
+    .ca1 h1{
+        font-size: 27px;
+    }
+    .ca1 p{
+        font-size: 10px;
+    }
+    .sk1 h1{
+        font-size: 27px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 0px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bt4{
+        width: 130px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:320px) and (min-width: 281px)
+{
+    .maincont{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding: 3%;
+    }
+    .image1{
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cont1{
+        padding: 0% 3%;
+    }
+    .cont1 h1{
+       font-size: 33px;
+       width: 96%;
+    }
+    .cont1 h2{
+       font-size: 36px;
+    }
+    .cont1 p{
+        font-size: 9px;
+        width: 100%;
+        text-align: justify;
+    }
+    .cont2{
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bt1{
+        width: 42px;
+        height: 42px;
+        justify-content: center;
+    }
+    .bt3{
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 1%;
+    }
+    .icn11{
+        width: 20px;
+        height: 20px;
+    }
+    .sk2{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sk1 p{
+        text-align: center;
+    }
+    .sk21 h1{
+        font-size: 27px;
+    }
+    .sk21 p{
+        font-size: 10px;
+    }
+    .skk1{
+        width: 80%;
+        padding: 0%;
+    }
+    .skk2{
+        width: 100%;
+        padding: 0% 8%;
+    }
+    .abt2{
+        width: 100%;
+        padding: 8%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt2 h1{
+        font-size: 27px;
+    }
+    .abt2 p{
+        text-align: justify;
+        font-size: 10px
+    }
+    .ca1 h1{
+        font-size: 27px;
+    }
+    .ca1 p{
+        font-size: 10px;
+    }
+    .sk1 h1{
+        font-size: 27px;
+    }
+    .sk1 p{
+        font-size: 10px;
+    }
+    .image2{
+        padding: 0%;
+        margin: auto;
+    }
+    .mainc1 h1{
+        font-size: 27px;
+    }
+    .maincont3{
+        margin-top: 25%;
+    }
+    .mainc2{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .mainc21{
+        width: 100%;
+    }
+    .maincont4{
+        margin-bottom: 25%;
+    }
+    .ca1{
+        width: 100%;
+        gap: 0px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bt4{
+        width: 130px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .ca{
+        gap: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .image5{
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+    }
+    .contact{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .image121{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1024px) and (min-width: 600px){
+    .cont1 h1{
+        font-size: 42px;
+        width: auto;
+        padding: 3%;
+    }
+    .cont1 h2{
+        font-size: 47px;
+    }
+    .cont1 p{
+        font-size: 12px;
+    }
+    .image5{
+        width: 30%;
+    }
+    .ca{
+        padding-right: 0%;
+        justify-content: center;
+        padding: 0%;
+    }
+    .mainc2{
+        padding: 0%;
+    }
+    .mainc21{
+        width: 40%;
+    }
+    .maincont5{
+        margin-top: 7%;
+    }
+    .image1{
+        margin-top: 4%;
+    }
+}
+@media screen and (max-width:756px) and (min-width: 250px){
+    .navb1{
+        display: flex;
+        flex-direction: column;
+        background-color: #FAF9F5;
+        width: 100%;
+        z-index: 999;
+        margin-top: 5%;
+        align-items: center;
+        padding-bottom: 20px;
+        border: 2px solid black;
+        box-shadow:6px 6px;
+        border-radius: 20px;
+        padding:3%;
+        font-weight: 600;
+    }
+    .lk{
+        padding-top: 10px;
+        justify-content: start;
+    }
+    .navb{
+        width: 100%;
+    }
+    .nav{
+        padding: 0% 3%;
+    }
+}
+@media screen and (max-width:600px) and (min-width: 431px){
+    .cont1 h1{
+        font-size: 30px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        padding-right: 5%;
+        margin-top: -6%;
+        width: fit-content;
+    }
+    .cont1 h2{
+        font-size: 30px;
+    }
+    .cont1 p{
+        font-size: 10px;
+        width: 70%;
+    }
+    .bt1{
+        width: 54px;
+        height: 50px;
+    }
+    .icn11{
+        width: 22px;
+        height: 22px;
+    }
+    .image1{
+        width: 100%;
+    }
+    .maincont{
+        gap: 0%;
+        padding:5%;
+    }
+    .maincont1{
+        padding: 0% 7%;
+        gap:0%;
+        justify-content: space-between;
+
+    }
+    .abt2{
+        width: 80%;
+    }
+    .abt2 h1{
+        font-size: 35px;
+    }
+    .abt2 p{
+        font-size: 10px;
+    }
+    .bt3{
+        width: 130px;
+        height: 60px;
+        font-size: 12px;
+    }
+    .image2{
+        width: 50%;
+    }
+    .ca{
+        gap: 0%;
+        padding: 0% 8%;
+    }
+    .ca1 h1{
+        font-size: 35px;
+    }
+    .ca1 p{
+        font-size: 10px;
+    }
+    .bt4{
+        width: 130px;
+        height: 60px;
+        font-size: 12px;
+    }
+    .image5{
+        width: 50%;
+        height: 50%;
+        margin-top: 15%;
+    }
+    .sk21 h1{
+       font-size: 21px;
+    }
+    .sk21 p{
+        font-size: 9px;
+    }
+    .mainc21{
+        width: 70%;
+    }
+    .contact2{
+        flex-direction: column;
+    }
+    .contact2 h1{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1920px) and (min-width: 1471px)
+{
+    .nav{
+        padding: 0% 13%;
+    }
+    .navb h1{
+        font-size: 60px;
+    }
+    .navb{
+        height: 120px;
+        width: 100%;
+        padding: 0% 5%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .lk{
+        font-size: 23px;
+    }
+    .maincont{
+        gap:0%;
+        padding-right: 13%;
+    }
+    .cont1 h1{
+        font-size: 85px;
+        margin-top: -7%;
+        width: fit-content;
+        padding-right: 3%;
+        
+    }
+    .cont1 h2{
+        font-size: 80px;
+    }
+    .cont1 p{
+        font-size: 24px;
+        width: 83%;
+    }
+    .image1{
+        width: 110%;
+    }
+    .bt1{
+        width: 100px;
+        height: 100px;
+    }
+    .icn11{
+        width: 43px;
+        height: 43px;
+    }
+    .abt2 h1{
+        font-size: 70px;
+    }
+    .abt2 p{
+        font-size: 20px;
+    }
+    .bt3{
+        height: 100px;
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .ca1 h1{
+        font-size: 70px;
+    }
+    .ca1 p{
+        font-size: 20px;
+    }
+    .bt4{
+        height: 100px;
+        width: 250px;
+        font-size: 20px;
+    }
+    .sk1 h1{
+        font-size: 70px;
+    }
+    .sk21 h1{
+        font-size: 40px;
+    }
+    .sk21 p{
+        font-size: 18px;
+    }
+    .skk21{
+        font-size: 22px;
+    }
+    .bar {
+        height: 16px;
+    }
+    .bar span{
+        height: 16px;
+    }
+    .bar p{
+        font-size: 15px;
+    }
+    .mainc1 h1{
+        font-size: 70px;
+    }
+    .mn h1{
+        font-size: 20px;
+    }
+    .mn h6{
+        font-size: 13px;
+    }
+    .mainc21 p{
+        font-size: 14px;
+    }
+    .icn2{
+        width: 30px;
+        height: 30px;
+    }
+    .contact2{
+        gap: 4%;
+    }
+    .contact2 h1{
+        font-size: 25px;
+    }
+    .contact1 h1{
+        font-size: 25px;
+    }
+    .image121{
+        width: 15%;
+    }
+}
+@media screen and (max-width:2304px) and (min-width:1921px)
+{
+    .nav{
+        padding: 0% 13%;
+    }
+    .navb h1{
+        font-size: 60px;
+    }
+    .navb{
+        height: 120px;
+        width: 100%;
+        padding: 0% 5%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .lk{
+        font-size: 23px;
+    }
+    .maincont{
+        gap:0%;
+        padding-right: 13%;
+    }
+    .cont1 h1{
+        font-size: 85px;
+        margin-top: -7%;
+        width: fit-content;
+        padding-right: 3%;
+        
+    }
+    .cont1 h2{
+        font-size: 80px;
+    }
+    .cont1 p{
+        font-size: 24px;
+        width: 83%;
+    }
+    .image1{
+        width: 110%;
+    }
+    .bt1{
+        width: 100px;
+        height: 100px;
+    }
+    .icn11{
+        width: 43px;
+        height: 43px;
+    }
+    .abt2 h1{
+        font-size: 70px;
+    }
+    .abt2 p{
+        font-size: 20px;
+    }
+    .bt3{
+        height: 100px;
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .ca1 h1{
+        font-size: 70px;
+    }
+    .ca1 p{
+        font-size: 20px;
+    }
+    .bt4{
+        height: 100px;
+        width: 250px;
+        font-size: 20px;
+    }
+    .sk1 h1{
+        font-size: 70px;
+    }
+    .sk21 h1{
+        font-size: 40px;
+    }
+    .sk21 p{
+        font-size: 18px;
+    }
+    .skk21{
+        font-size: 22px;
+    }
+    .bar {
+        height: 16px;
+    }
+    .bar span{
+        height: 16px;
+    }
+    .bar p{
+        font-size: 15px;
+    }
+    .mainc1 h1{
+        font-size: 70px;
+    }
+    .mn h1{
+        font-size: 20px;
+    }
+    .mn h6{
+        font-size: 13px;
+    }
+    .mainc21 p{
+        font-size: 14px;
+    }
+    .icn2{
+        width: 30px;
+        height: 30px;
+    }
+    .contact2{
+        gap: 4%;
+    }
+    .contact2 h1{
+        font-size: 25px;
+    }
+    .contact1 h1{
+        font-size: 25px;
+    }
+    .image121{
+        width: 15%;
+    }
+}
+@media screen and (max-width:2560px) and (min-width:2305px)
+{
+    .nav{
+        padding: 0% 13%;
+    }
+    .navb h1{
+        font-size: 70px;
+    }
+    .navb{
+        height: 160px;
+        width: 100%;
+        padding: 0% 5%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .lk{
+        font-size: 23px;
+    }
+    .maincont{
+        gap:0%;
+        padding-right: 13%;
+    }
+    .cont1 h1{
+        font-size: 95px;
+        margin-top: -5%;
+        width: fit-content;
+        padding-right: 3%;
+        
+    }
+    .cont1 h2{
+        font-size: 90px;
+    }
+    .cont1 p{
+        font-size: 28px;
+        width: 83%;
+    }
+    .image1{
+        width: 110%;
+    }
+    .bt1{
+        width: 115px;
+        height: 115px;
+    }
+    .icn11{
+        width: 50px;
+        height: 50px;
+    }
+    .abt2 h1{
+        font-size: 75px;
+    }
+    .abt2 p{
+        font-size: 23px;
+    }
+    .bt3{
+        height: 120px;
+        width: 280px;
+        font-size: 24px;
+    }
+
+    .ca1 h1{
+        font-size: 75px;
+    }
+    .ca1 p{
+        font-size: 23px;
+    }
+    .bt4{
+        height: 120px;
+        width: 280px;
+        font-size: 24px;
+    }
+    .sk1 h1{
+        font-size: 75px;
+    }
+    .sk21 h1{
+        font-size: 53px;
+    }
+    .sk21 p{
+        font-size: 23px;
+    }
+    .skk21{
+        font-size: 26px;
+    }
+    .bar {
+        height: 19px;
+    }
+    .bar span{
+        height: 19px;
+    }
+    .bar p{
+        font-size: 17px;
+    }
+    .mainc1 h1{
+        font-size: 75px;
+    }
+    .mn h1{
+        font-size: 24px;
+    }
+    .mn h6{
+        font-size: 16px;
+    }
+    .mainc21 p{
+        font-size: 15px;
+    }
+    .icn2{
+        width: 37px;
+        height: 37px;
+    }
+    .contact2{
+        gap: 4%;
+    }
+    .contact2 h1{
+        font-size: 30px;
+    }
+    .contact1 h1{
+        font-size: 30px;
+    }
+    .image121{
+        width: 15%;
+    }
+}
+@media screen and (max-width:3840px) and (min-width:2559px)
+{
+    .nav{
+        padding: 0% 13%;
+    }
+    .navb h1{
+        font-size: 80px;
+    }
+    .navb{
+        height: 180px;
+        width: 100%;
+        padding: 0% 5%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .lk{
+        font-size: 32px;
+    }
+    .maincont{
+        gap:0%;
+        padding-right: 13%;
+    }
+    .cont1 h1{
+        font-size: 122px;
+        margin-top: -5%;
+        width: fit-content;
+        padding-right: 3%;
+        
+    }
+    .cont1 h2{
+        font-size: 120px;
+    }
+    .cont1 p{
+        font-size: 33px;
+        width: 83%;
+    }
+    .image1{
+        width: 120%;
+    }
+    .bt1{
+        width: 130px;
+        height: 130px;
+    }
+    .icn11{
+        width: 60px;
+        height: 60px;
+    }
+    .abt2 h1{
+        font-size: 100px;
+    }
+    .abt2 p{
+        font-size: 28px;
+    }
+    .bt3{
+        height: 140px;
+        width: 340px;
+        font-size: 30px;
+    }
+
+    .ca1 h1{
+        font-size: 100px;
+    }
+    .ca1 p{
+        font-size: 28px;
+    }
+    .bt4{
+        height: 140px;
+        width: 340px;
+        font-size: 30px;
+    }
+    .sk1 h1{
+        font-size: 90px;
+    }
+    .sk21 h1{
+        font-size: 70px;
+    }
+    .sk21 p{
+        font-size: 30px;
+    }
+    .skk21{
+        font-size: 36px;
+    }
+    .bar {
+        height: 23px;
+    }
+    .bar span{
+        height: 23px;
+    }
+    .bar p{
+        font-size: 20px;
+    }
+    .mainc1 h1{
+        font-size: 85px;
+    }
+    .mn h1{
+        font-size: 30px;
+    }
+    .mn h6{
+        font-size: 22px;
+    }
+    .mainc21 p{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .icn2{
+        width: 55px;
+        height: 55px;
+    }
+    .contact2{
+        gap: 4%;
+    }
+    .contact2 h1{
+        font-size: 40px;
+    }
+    .contact1 h1{
+        font-size: 40px;
+    }
+    .image121{
+        width: 15%;
+    }
+}
